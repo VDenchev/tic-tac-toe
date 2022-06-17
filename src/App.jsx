@@ -1,5 +1,4 @@
 import React, { createContext } from "react"
-import "./App.css"
 import Game from "./Components/Game"
 import DarkModeToggle from "./Components/DarkModeToggle"
 
