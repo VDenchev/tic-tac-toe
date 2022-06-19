@@ -71,7 +71,7 @@ function Game() {
 		<>
 			<div className=" dark-transition dark:bg-dark-900 flex m-8 p-8 gap-8 flex-col-reverse sm:flex-row items-center justify-evenly rounded-2xl bg-westar shadow-md">
 				<GameInfo winner={winner} turn={turn} handleClick={reset} />
-				<div className="grid grid-cols-3 gap-2 p-2 bg-blue dark:bg-dark-900 rounded-2xl w-[100%] sm:w-[40vw] shadow-md">
+				<div className="dark-transition grid grid-cols-3 gap-2 p-2 bg-blue dark:bg-dark-900 rounded-2xl w-[100%] sm:w-[40vw] shadow-md">
 					{boxElements}
 				</div>
 			</div>
