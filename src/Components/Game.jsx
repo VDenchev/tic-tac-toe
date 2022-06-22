@@ -3,13 +3,13 @@ import { ThemeContext } from "../App"
 import Box from "./Box"
 import GameInfo from "./GameInfo"
 
-function Game() {
+const Game = () => {
 	const [turn, setTurn] = useState("x")
 	const [boxes, setBoxes] = useState(Array(9).fill(""))
 	const [winner, setWinner] = useState("")
 
 	const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
-	console.log(isDarkMode)
+
 	const checkWinner = () => {
 		const combos = [
 			[0, 1, 2],
@@ -66,7 +66,9 @@ function Game() {
 	const boxElements = boxes.map((mark, index) => (
 		<Box key={index} value={mark} handleClick={() => handleClick(index)} />
 	))
+
 	document.body.className = isDarkMode ? "dark" : ""
+
 	return (
 		<>
 			<div className=" dark-transition dark:bg-dark-900 flex m-8 p-8 gap-8 flex-col-reverse sm:flex-row items-center justify-evenly rounded-2xl bg-westar shadow-md">

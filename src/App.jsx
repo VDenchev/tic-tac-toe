@@ -4,7 +4,7 @@ import DarkModeToggle from "./Components/DarkModeToggle"
 
 export const ThemeContext = createContext({})
 
-function App() {
+const App = () => {
 	const [isDarkMode, setIsDarkMode] = React.useState(false)
 
 	return (

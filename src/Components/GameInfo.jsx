@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
-import { ThemeContext } from "../App"
+import React from "react"
+
 const GameInfo = ({ winner, turn, handleClick }) => {
-	const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
 	return (
 		<div className="flex items-center flex-col sm:items-start sm:w-[40%]">
 			{winner === "" ? (

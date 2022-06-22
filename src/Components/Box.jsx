@@ -1,8 +1,6 @@
-import React, { useContext } from "react"
-import { ThemeContext } from "../App"
-const Box = ({ value, handleClick }) => {
-	const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
+import React from "react"
 
+const Box = ({ value, handleClick }) => {
 	const fix = (e) => {
 		const offsetY = e.changedTouches[0].target.offsetTop
 		const offsetX = e.changedTouches[0].target.offsetLeft
