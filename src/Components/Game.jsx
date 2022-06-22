@@ -22,7 +22,7 @@ const Game = () => {
 			[2, 4, 6],
 		]
 		if (winner === "" && boxes.every((box) => box !== "")) {
-			setWinner("z")
+			setWinner("tie")
 		}
 		combos.forEach((combo) => {
 			if (

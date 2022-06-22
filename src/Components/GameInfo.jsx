@@ -14,9 +14,9 @@ const GameInfo = ({ winner, turn, handleClick }) => {
 				<>
 					<h1 className="dark-transition text-3xl text-center sm:text-left">
 						<span className="text-poppy-100 dark:text-poppy-200 text-3xl">
-							{winner === "z" ? "Nobody" : winner}
+							{winner === "tie" ? "Tie!" : winner}
 						</span>{" "}
-						is the winner!
+						{winner === "tie" ? "" : "is the winner!"}
 					</h1>
 					<button
 						className="dark-transition mt-8 p-6 rounded-2xl bg-poppy-100 hover:bg-poppy-900 dark:bg-poppy-200 hover:dark:bg-poppy-200/95 text-2xl text-westar dark:text-grey font-bold shadow-sm border border-dark-900/10"
